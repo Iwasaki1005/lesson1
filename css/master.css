@@ -1,0 +1,384 @@
+/*--------------------------------------------------------------------------
+ *
+ * body
+ *
+ *
+--------------------------------------------------------------------------*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {overflow-x:hidden;}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * Z-index
+ *
+ *
+--------------------------------------------------------------------------*/
+
+header {
+	z-index: 500;
+}
+
+.slide-box {
+	z-index: 100;
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * header
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.header-list {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.header-link {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	width: 40vw;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header {
+	height: 80px;
+	width: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: rgb(255, 255, 255);
+}
+
+.glv-size {
+	height: 80px;
+}
+
+p.header-text1:first-letter{
+	color:#c79d68;
+}
+
+.header-text1 {
+	font-family: 'Libre Baskerville', serif;
+	font-size:18px;
+	color:#9b9b9b;
+}
+
+.header-text2 {
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 10px;
+	color:#c79d68;
+}
+
+.hover-Uline {
+	position: relative;/*疑似要素の親を固定*/
+	cursor: pointer;/*カーソルをポインターへ*/
+}
+  
+.hover-Uline:before {
+	content: ""; /*疑似要素の中身は空（記述は必須）*/
+	position: absolute; /*子要素として疑似要素を固定*/
+	left: 0; /*長さはテキストの両端まで*/
+	right: 0; /*長さはテキストの両端まで*/
+	bottom: -5px;  /*線の上下位置*/
+	width: 100%; /*線の長さ*/
+	height: 2px; /*線の太さ*/
+	background-color: #c79d68; /*線の色*/
+	transform: scale(0, 1); /*横方向に0状態から全体まで線を入れる*/
+	transform-origin: center; /*中央を起点にアニメーション*/
+	transition: transform .2s; /*アニメーションの時間*/
+}
+
+.hover-Uline-switch:hover .hover-Uline:before{
+	transform: scale(1); /*ホバー時に等倍へ拡大*/
+}
+
+.sub-header {
+	background-color: #c79d68;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sub-header-text1 {
+	font-family: 'Libre Baskerville', serif;
+	font-size:18px;
+	color:#ffffff;
+}
+
+.sub-header-text2 {
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 10px;
+	color:#ffffff;
+}
+
+.sub-header-list {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * slide
+ *
+ *
+--------------------------------------------------------------------------*/
+
+/* slide-box */
+.slide-box {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+/* slide */
+.slide {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.slide .item {
+	position: relative;
+	height: 100%;
+}
+.slide .item a {
+	display: block;
+}
+.slide .item::before {
+	display: block;
+	padding-top: 35.4%;
+	content: "";
+}
+.slide .item .image {
+	position: relative;
+	overflow: hidden;
+}
+.slide .item img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+}
+.slide > .slick-list,
+.slide > .slick-list > .slick-track,
+.slide > .slick-list > .slick-track > .slick-slide > div {
+	position: relative;
+	height: 100%;
+}
+/* slide-navigation */
+
+.slide-navigation {
+	line-height: 0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.slide-navigation .item {
+	position: relative;
+	cursor: pointer;
+}
+.slide-navigation .item .image {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.slide-navigation .item .image::before {
+	display: block;
+	padding-top: 35.5%;
+	content: "";
+}
+.slide-navigation .item .image::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	content: "";
+	opacity: 0.5;
+	background: #000;
+}
+.slide-navigation .slick-current .image::after {
+	opacity: 0;
+}
+.slide-navigation .item .image {
+	position: relative;
+	overflow: hidden;
+}
+.slide-navigation .item .image img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+}
+@media screen and (max-width: 767px) {
+	.slide-navigation {
+	  width: 100%;
+	}
+	.slide-navigation .item .image::before {
+	  padding-top: 50%;
+	}
+}
+
+/* slick */
+.slick-vertical .slick-slide {
+	border: 0 solid transparent;
+}
+.slick-arrow {
+	z-index: 999;
+}
+.slick-prev {
+	top: 25px;
+	bottom: 0;
+	left: 20px;
+	right: auto;
+	margin: auto;
+}
+.slick-next {
+	top: 25px;
+	bottom: 0;
+	left: auto;
+	right: 20px;
+	margin: auto;
+}
+
+.slick-track {
+	width: calc(100vw - calc(100vw - 100%));;
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * subtitle
+ *
+ *
+--------------------------------------------------------------------------*/
+.subtitle-container {
+	display: grid;
+	grid-template-rows: 50px;
+	grid-template-columns: 1fr 224.83px 1fr;
+}
+
+.subtitle-line {
+	height: 50px;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * content
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.dmy-backillust {
+	width: 100%;
+	height: 80vh;
+}
+
+.notice-container {
+	display: grid;
+	grid-template-rows: 500px;
+	grid-template-columns: 60% 1fr;
+}
+
+.news {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.twitter {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	background: #8f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeline-container {
+	width: 380px;
+	height: 460px;
+}
+
+.news-box {
+	width: 90%;
+	height: 90%;
+	border: 2px solid #c79d68;
+	border-radius: 4px;
+}
+
+.news-index {
+	width: 90%;
+	color: #c79d68;
+	border-bottom: 2px solid #c79d68;
+	margin: 10px auto;
+}
+
+.news-list {
+	height: 10px;
+	width: 90%;
+	overflow-y: scroll;
+	height: 80%;
+	margin: 20px auto;
+}
+
+.news-container {
+	background-color: rgb(255, 255, 255);
+	width: 90%;
+	margin: 5px auto;
+	border-radius: 10px;
+	padding: 2px 5px;
+	box-shadow: 0 0 6px gray;
+}
+
+.news-day {
+	font-size: 12px;
+}
+
+.news-icon {
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	background-color: blue;
+	padding: 2px 10px;
+	border-radius: 4px;
+	margin-left: 0.5em;
+}
+
+.news-text {
+	font-size: 14px;
+	text-indent: 0.5em;
+}
