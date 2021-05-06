@@ -23,6 +23,32 @@ a {
 	text-decoration: none;
 }
 
+/*--------------------------------------------------------------------------
+ *
+ * font
+ *
+ *
+--------------------------------------------------------------------------*/
+
+body {
+	font-family: YakuHanJP;
+	font-family: Kosugi Maru, sans-serif;
+}
+
+.font-E1 {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.font-E2 {
+	font-family: Libre Baskerville, serif;
+}
+
+.font-E3 {
+	font-family: YakuHanJP, 'Allura', cursive;
+}
+
+
+
 
 
 /*--------------------------------------------------------------------------
@@ -60,13 +86,12 @@ a {
 }
 
 .NL-top-position {
-	width: 100vw;
+	width: calc(100vw - calc(100vw - 100%));
 	height: 100vh;
 	max-height: 54vw;
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
-	background-image: url(../dmyimage/slide_test.png);
 }
 
 .dia-logo {
@@ -148,12 +173,49 @@ a {
 
 /*--------------------------------------------------------------------------
  *
- * test
+ * Top-Slider-scroll
  *
  *
 --------------------------------------------------------------------------*/
 
+.scroll-text {
+	position: relative;
+	top: -1vw;
+	left: 5vw;
+	transform: rotate(45deg);
+	color: #e7c69e;
+	font-size: 1.1vw;
 
+}
+
+.scroll-text:before {
+    right: 7vw;
+    width: 6vw;
+    transition: .4s;
+
+	content: "";
+    position: absolute;
+    top: 50%;
+    height: 0px;
+    border-top: 0.1vw solid #ffdbae;
+    border-bottom: 0.1vw solid #fff;
+
+	animation: scroll-anime 3s ease 0s infinite;
+}
+
+@keyframes scroll-anime {
+	100% {
+		width: 0vw;
+	}
+}
+
+
+/*--------------------------------------------------------------------------
+ *
+ * test
+ *
+ *
+--------------------------------------------------------------------------*/
 
 
 
