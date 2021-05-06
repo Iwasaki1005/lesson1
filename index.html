@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/master.css">
+	<link rel="stylesheet" href="./js/script.js">
 	<title>タイトル</title>
 	<meta name="keywords" content="ねばーらんどF,イラスト,フリーゲーム,イラスト素材,,">
 	<meta name="description" content="サークル『ねばーらんどF』のメンバーが作成したゲームや情報、イラストを掲示しているポータルサイトです。">
@@ -50,8 +51,7 @@
 				<div></div>
 			</div>
 
-			<!-- ↓ 現在作成中部分 ↓ -->
-			<!-- ↑ 現在作成中部分 ↑ -->
+			
 
 
 			<div class="dia-slide1"></div>
@@ -67,11 +67,49 @@
 			-->
 		</div>
 	</div>
+
+
+	<!-- ↓ 現在作成中部分 ↓ -->
 	
 
+	<div id="open">
+		モーダルを開く
+	</div>
+
+	<div id="mask" class="hidden"></div>
+
+	<section id="modal" class="hidden">
+	  <p>君が新海翔君かな？</p>
+		<div id="close">
+			閉じる
+		</div>
+	</section>
+
+
+
+	<!-- ↑ 現在作成中部分 ↑ -->
 
 
 	<div class="dmy"></div>
+
+	<script>
+		'use strict';
+{
+  const open = document.getElementById('open');
+  const close = document.getElementById('close');
+  const modal = document.getElementById('modal');
+  const mask = document.getElementById('mask');
+
+  open.addEventListener('click', function () {
+    modal.classList.remove('hidden');
+    mask.classList.remove('hidden');
+  });
+  close.addEventListener('click', function () {
+    modal.classList.add('hidden');
+    mask.classList.add('hidden');
+  });
+}
+	</script>
 
 
 </body>
