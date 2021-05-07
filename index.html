@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/master.css">
-	<link rel="stylesheet" href="./js/script.js">
+	<link rel="stylesheet" href="./css/master.css" media="screen and (min-width:1000px) and (max-width:2000px)">
+	
 	<title>タイトル</title>
 	<meta name="keywords" content="ねばーらんどF,イラスト,フリーゲーム,イラスト素材,,">
 	<meta name="description" content="サークル『ねばーらんどF』のメンバーが作成したゲームや情報、イラストを掲示しているポータルサイトです。">
@@ -18,6 +18,8 @@
 	<!--丸っこい英語--><!--font-family: 'Varela Round', sans-serif;-->
 	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 	<!--読みやすい日本語--><!--Kosugi Maru`, sans-serif -->
+	<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+	<!--明朝体の日本語--><!--font-family: 'Sawarabi Mincho', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<!--装飾専用超おしゃれな英語--><!--font-family: 'Allura', cursive; -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
@@ -41,7 +43,7 @@
 	<div class="NL-top-position">
 		<div class="NL-top">
 			<div class="dia-logo">
-				<img class="top-logo"></img>
+				<img class="top-logo" src="./dmyimage/rogo_dmy.png">
 			</div>
 
 
@@ -54,12 +56,24 @@
 			
 
 
-			<div class="dia-slide1"></div>
-			<div class="dia-slide2"></div>
-			<div class="dia-slide3"></div>
-			<div class="dia-slide4"></div>
-			<div class="dia-slide5"></div>
-			<div class="dia-slide6"></div>
+			<div class="dia-slide1">
+				<div class="dia-slide-area"></div>
+			</div>
+			<div class="dia-slide2">
+				<div class="dia-slide-area"></div>
+			</div>
+			<div class="dia-slide3">
+				<div class="dia-slide-area"></div>
+			</div>
+			<div class="dia-slide4">
+				<div class="dia-slide-area"></div>
+			</div>
+			<div class="dia-slide5">
+				<div class="dia-slide-area"></div>
+			</div>
+			<div class="dia-slide6">
+				<div class="dia-slide-area"></div>
+			</div>
 			<!--
 			<div class="white1"></div>
 			<div class="white2"></div>
@@ -70,6 +84,8 @@
 
 
 	<!-- ↓ 現在作成中部分 ↓ -->
+
+	
 	
 
 	<div id="open">
@@ -92,24 +108,9 @@
 
 	<div class="dmy"></div>
 
-	<script>
-		'use strict';
-{
-  const open = document.getElementById('open');
-  const close = document.getElementById('close');
-  const modal = document.getElementById('modal');
-  const mask = document.getElementById('mask');
+	<script type="text/javascript" src="./js/modalmenu.js"></script>
 
-  open.addEventListener('click', function () {
-    modal.classList.remove('hidden');
-    mask.classList.remove('hidden');
-  });
-  close.addEventListener('click', function () {
-    modal.classList.add('hidden');
-    mask.classList.add('hidden');
-  });
-}
-	</script>
+	
 
 
 </body>
