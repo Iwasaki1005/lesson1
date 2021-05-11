@@ -57,6 +57,26 @@ body {
  *
 --------------------------------------------------------------------------*/
 
+.bg-effect {
+	z-index: -1;
+}
+.bt-index {
+	display: block;
+	z-index: 10;
+}
+
+.bg-effect {
+	z-index: 10;
+}
+
+.ef-fairy {
+	z-index: 10;
+}
+
+#mask {
+	z-index: 10;
+}
+
 
 /*--------------------------------------------------------------------------
  *
@@ -237,7 +257,7 @@ body {
 	
 	bottom: -2vw;
 	right: -2vw;
-	animation: ef-f1-anime 12s ease 0s infinite, fadeout-anime 12s linear 0s infinite;
+	animation: ef-f1-anime 14s ease 0s infinite, fadeout-anime 14s linear 0s infinite;
 }
 
 @keyframes ef-f1-anime {
@@ -309,7 +329,7 @@ body {
 
 	bottom: -1vw;
 	right: 16vw;
-	animation: ef-f6-anime 10s ease 7s infinite, fadeout-anime 10s linear 7s infinite;
+	animation: ef-f6-anime 12s ease 7s infinite, fadeout-anime 12s linear 7s infinite;
 }
 
 @keyframes ef-f6-anime {
