@@ -9,7 +9,16 @@ body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-	height: 100%;
+	background: #fafafa;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	line-height: 150%;
 }
 
 
@@ -25,13 +34,18 @@ a {
 --------------------------------------------------------------------------*/
 
 body {
-	font-family: YakuHanJP;
-	font-family: Kosugi Maru, sans-serif;
+	font-size: 1.4vw;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: normal;
+	margin: 0;
 }
 
 body {
-	background: #fafafa;
-	/*background-color: black;*/
+	font-family: YakuHanJP;
+	font-family: Kosugi Maru, sans-serif;
 }
 
 .font-E1 {
@@ -46,7 +60,9 @@ body {
 	font-family: YakuHanJP, 'Allura', cursive;
 }
 
-
+.co-white {
+	color: #fafafa;
+}
 
 
 
@@ -80,10 +96,224 @@ body {
 
 /*--------------------------------------------------------------------------
  *
- * header
+ * common
  *
  *
 --------------------------------------------------------------------------*/
+
+.section {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	/*border: 2px solid tomato;*/
+}
+
+.display-flex {
+	display: flex;
+}
+
+.content-core {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * button
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.bt-typeA {
+	display: inline-block;
+	color: #e7b06c;
+	font-size: 1.3rem;
+	text-decoration: none;
+	border: 0.1vw solid transparent;
+	padding: 1.2vw 4vw;
+	position: relative;
+	width: 20vw;
+	text-align: center;
+}
+
+.bt-typeA-border::after,
+.bt-typeA-border::before,
+.bt-typeA-border-inner::after,
+.bt-typeA-border-inner::before {
+	background-color: #e7b06c;
+	content: '';
+	display: block;
+	position: absolute;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+.bt-typeA-border::after {
+	width: 0px;
+	height: 0.1vw;
+	top: -0.1vw;
+	left: -0.1vw;
+}
+
+.bt-typeA-border::before {
+	width: 0px;
+	height: 0.1vw;
+	right: -0.1vw;
+	bottom: -0.1vw;
+}
+
+.bt-typeA-border-inner::after {
+	width: 0.1vw;
+	height: 0.1vw;
+	left: -0.1vw;
+	bottom: -0.1vw;
+}
+
+.bt-typeA-border-inner::before {
+	width: 0.1vw;
+	height: 0.1vw;
+	top: -0.1vw;
+	right: -0.1vw;
+}
+
+
+.bt-typeA-border:hover::after,
+.bt-typeA-border:hover::before {
+  width: 100%;
+  width: calc(100% + 0.1vw);
+}
+
+.bt-typeA-border:hover .bt-typeA-border-inner::after,
+.bt-typeA-border:hover .bt-typeA-border-inner::before {
+  height: 100%;
+  height: calc(100% + 0.1vw);
+}
+
+
+
+/*--------------------------------------------------------------------------
+ *
+ * news
+ *
+ *
+--------------------------------------------------------------------------*/
+
+
+.news-window-container {
+	width: 55%;
+	height: 30vw;
+	display: grid;
+	grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+	grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+}
+
+.news-window-img {
+	grid-row: 2 / 16;
+	grid-column: 1 / 18;
+	border: 2px solid blue;
+}
+
+.news-window-info {
+	background-color: #e7b06c;
+	grid-row: 5 / 21;
+	grid-column: 2 / 20;
+	display: grid;
+	grid-template-columns: 2.5% 87% 9% 1.5% ;
+	grid-template-rows: 2.5% 69% 26% 2.5%;
+}
+
+.news-window-info-text {
+	grid-column: 2 / 4;
+	grid-row: 3 / 4;
+}
+
+.news-window-info-tag {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+.newstag-dmy {
+	background-color: red;
+	text-align: center;
+	width: 100%;
+	margin: 5% auto;
+	border-radius: 10%;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+
+.newstag-info {
+	background-color: blue;
+	text-align: center;
+	width: 100%;
+	margin: 15% auto;
+	border-radius: 10%;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+
+.news-list-container {
+	width: 45%;
+	height: 30vw;
+}
+
+.news-list-dia-position {
+	height: 80%;
+}
+
+.news-list-dia {
+	width: 16vw;
+	height: 16vw;
+	display: grid;
+	grid-template-rows: 8vw 8vw;
+	grid-template-columns: 8vw 8vw;
+	transform: rotate(45deg);
+}
+
+.news-dia1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	padding: 4%;
+}
+
+.news-dia2 {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	padding: 4%;
+}
+
+.news-dia3 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	padding: 4%;
+}
+
+.news-dia4 {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	padding: 4%;
+}
+
+.news-dia-img {
+	width: 100%;
+	height: 100%;
+	border: 0.2vw solid #e7b06c;
+}
+
+.news-list-button {
+	height: 20%;
+}
+
 
 /*--------------------------------------------------------------------------
  *
@@ -236,7 +466,7 @@ body {
 
 /*--------------------------------------------------------------------------
  *
- * Effect-test
+ * effect
  *
  *
 --------------------------------------------------------------------------*/
@@ -291,7 +521,7 @@ body {
 .ef-f3 {
 	bottom: -6vw;
 	right: 26vw;
-	animation: ef-f3-anime 9s ease 0s infinite, fadeout-anime 9s linear 0s infinite;
+	animation: ef-f3-anime 12s ease 0s infinite, fadeout-anime 12s linear 0s infinite;
 	animation-delay: -2s;
 }
 
@@ -343,7 +573,7 @@ body {
 .ef-f6 {
 	bottom: -1vw;
 	right: 16vw;
-	animation: ef-f6-anime 12s ease 7s infinite, fadeout-anime 12s linear 7s infinite;
+	animation: ef-f6-anime 14s ease 7s infinite, fadeout-anime 14s linear 7s infinite;
 }
 
 @keyframes ef-f6-anime {
@@ -533,6 +763,12 @@ bottom +12vw  right +24vw
 	}
 }
 
+/*--------------------------------------------------------------------------
+ *
+ * debbug area
+ *
+ *
+--------------------------------------------------------------------------*/
 
 
 
