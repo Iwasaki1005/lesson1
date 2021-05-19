@@ -5,6 +5,10 @@
  *
 --------------------------------------------------------------------------*/
 
+html {
+	overflow: overlay
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -987,6 +991,29 @@ bottom +12vw  right +24vw
 	100% {
 		opacity: 0;
 	}
+}
+
+/*--------------------------------------------------------------------------
+ *
+ * scrollbar
+ *
+ *
+--------------------------------------------------------------------------*/
+
+html::-webkit-scrollbar {
+	width: 0.8vw;
+}
+  
+  /* スクロールの背景の設定 */
+  html::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+  
+  /* スクロールのつまみ部分の設定 */
+  html::-webkit-scrollbar-thumb {
+	border-radius: 2vw;
+	background: #ffdbae;
+	border: 0.2vw solid #fafafa;
 }
 
 /*--------------------------------------------------------------------------
