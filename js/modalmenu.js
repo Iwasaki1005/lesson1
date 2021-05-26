@@ -1,17 +1,11 @@
 
 'use strict';
 {
-const open = document.getElementById('open');
-const close = document.getElementById('close');
-const modal = document.getElementById('modal');
-const mask = document.getElementById('mask');
+const dropen = document.getElementById('hamburger-button');
+const drmenu = document.getElementById('drawer-menu');
 
-open.addEventListener('click', function () {
-modal.classList.remove('hidden');
-mask.classList.remove('hidden');
+dropen.addEventListener('click', function () {
+	drmenu.classList.remove('DR-hidden');
 });
-close.addEventListener('click', function () {
-modal.classList.add('hidden');
-mask.classList.add('hidden');
-});
+
 }

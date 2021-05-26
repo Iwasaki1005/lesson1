@@ -70,6 +70,14 @@ body {
 	color: #fafafa;
 }
 
+.co-brown {
+	color: #e7b06c;
+}
+
+.co-grey {
+	color: #9b9b9b;
+}
+
 .vertical-text {
 	writing-mode: vertical-rl;
 	color: #ffdbae;
@@ -80,6 +88,8 @@ body {
 	font-size: 0.5rem;
 	margin-left: 2rem;
 }
+
+
 
 
 
@@ -1138,7 +1148,7 @@ html::-webkit-scrollbar {
 
 
 .dmy {
-	height: 40vh;
+	height: 200vh;
 }
 
 .bg-white {

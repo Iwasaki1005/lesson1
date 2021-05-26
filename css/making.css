@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------------------
+ *
+ * body
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.DR-menu {
+	width: 100%;
+	height: 85vh;
+	padding: 7.5vh 0px;
+	background-color: #ffdbae46;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+
+
+.DR-hidden {
+	display: none;
+}
+
+.menu-links {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu-fs1 {
+	font-size: 2rem;
+	line-height: 1rem;
+}
+
+.menu-fs2 {
+	font-size: 0.8rem;
+	line-height: 2rem;
+}
+
+.menu-icon {
+	font-size: 1.8rem;
+}
+
+.dmy-menudiv {
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	/*background-color: rgba(0, 255, 255, 0.26);*/
+	transition-duration: 2s;
+}
+
+/*
+.dmy-menudiv:hover {
+	font-family: YakuHanJP, 'Allura', cursive;
+	flex-direction: row-reverse;
+}
+*/
+
+.menu-container {
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.menu-logo {
+	height: 4.5vw;
+	width: 12vw;
+}
+
+.menu-line {
+	background-color: #e7b06c;
+	height: 0.1vw;
+	width: 95%;
+}
