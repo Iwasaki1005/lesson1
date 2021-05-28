@@ -109,16 +109,12 @@ body {
 	z-index: 10;
 }
 
-.bg-effect {
-	z-index: 10;
+#drawer-menu {
+	z-index: 20;
 }
 
-.ef-fairy {
-	z-index: 10;
-}
-
-#mask {
-	z-index: 10;
+.Gl-menu {
+	z-index: 30;
 }
 
 
@@ -239,7 +235,7 @@ body {
 }
 
 .m-left-2rem {
-	margin-left: 1rem;
+	margin-left: 2rem;
 }
 
 
@@ -377,28 +373,34 @@ body {
 .Gl-burger {
 	width: 3vw;
 	height: 3vw;
+	cursor: pointer;
+}
+
+.burger-border {
+	width: 3vw;
+	height: 0.15vw;
+	background-color: #e7b06c;
+	margin-top: 0.8rem;
+	transition-duration: 0.5s;
 }
 
 .burger-border1 {
-	width: 3vw;
-	height: 0.1vw;
-	background-color: #e7b06c;
-	margin-top: 0.4rem;
+	width: 3.7vw;
+	transform: rotate(36deg);
+	transform-origin:left top;
 }
 
 .burger-border2 {
-	width: 3vw;
-	height: 0.1vw;
-	background-color: #e7b06c;
-	margin-top: 0.8rem;
+	width: 0.0vw;
+	margin-top: 0.6rem;
 }
 
 .burger-border3 {
-	width: 3vw;
-	height: 0.1vw;
-	background-color: #e7b06c;
-	margin-top: 0.8rem;
+	width: 3.7vw;
+	transform: rotate(-36deg);
+	transform-origin:left top;
 }
+
 
 
 
