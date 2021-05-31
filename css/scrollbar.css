@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------------------
+ *
+ * scrollbar
+ *
+ *
+--------------------------------------------------------------------------*/
+
+html::-webkit-scrollbar {
+	width: 0.8vw;
+}
+  
+  /* スクロールの背景の設定 */
+  html::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+  
+  /* スクロールのつまみ部分の設定 */
+  html::-webkit-scrollbar-thumb {
+	border-radius: 2vw;
+	background: #ffdbae;
+	border: 0.2vw solid #fafafa;
+}

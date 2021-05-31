@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------------------
+ *
+ * illust
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.illist-area {
+	width: 95%;
+}
+
+.vertical-index {
+	width: 5%;
+}
+
+.illust-1 {
+	width: 41.6vw;
+	height: 23.4vw;
+	border: 0.2vw solid #e7b06c;
+}
+
+.illust-2 {
+	width: 19.2vw;
+	height: 10.8vw;
+	border: 0.2vw solid #e7b06c;
+}
+
+.illust-3 {
+	width: 19.2vw;
+	height: 10.8vw;
+	border: 0.2vw solid #e7b06c;
+}
+
+.bt-il-open {
+	height: 2vw;
+	width: 7.4vw;
+}
+
+.bt-il-open-sm {
+	height: 1.5vw;
+	width: 5.55vw;
+}
