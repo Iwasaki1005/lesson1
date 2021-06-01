@@ -8,13 +8,13 @@
 .sa {
 	opacity: 0;
 	transition: all .8s ease;
-  }
+}
+
+.sa.show {
+	opacity: 1;
+	transform: none;
+}
   
-  .sa.show {
-	  opacity: 1;
-	  transform: none;
-  }
-  
-  .sa--up {
-	  transform: translate(0, 10vh);
-  }
+.sa--up {
+	transform: translate(0, 10vh);
+}

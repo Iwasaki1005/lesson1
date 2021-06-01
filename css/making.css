@@ -9,7 +9,7 @@
 	width: 100%;
 	height: 85vh;
 	padding: 7.5vh 0px;
-	background-color: #ffdbae46;
+	background-color: #fff5e7d7;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -17,8 +17,6 @@
 
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
 	margin: 0 auto;
 	z-index: 2;
 
@@ -67,6 +65,8 @@
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
+
+	transition-duration: 0.5s;
 }
 
 .dr-logo {
@@ -78,8 +78,35 @@
 	background-color: #e7b06c;
 	height: 0.1vw;
 	width: 95%;
+
+	transition-duration: 0.5s;
 }
 
 .dislay-none {
 	display: none;
+}
+
+.dr-delay1 {
+	transition-delay: 0.1s;
+}
+
+.dr-delay2 {
+	transition-delay: 0.2s;
+}
+
+.dr-delay3 {
+	transition-delay: 0.3s;
+}
+
+.dr-delay4 {
+	transition-delay: 0.4s;
+}
+
+.dr-saup {
+	transform: translate(0, 5vh);
+	opacity: 0;
+}
+
+.dr-hide {
+	opacity: 0;
 }

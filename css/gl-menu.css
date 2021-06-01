@@ -69,7 +69,6 @@
 }
 
 .burger-border1 {
-	width: 3.7vw;
 	transform: rotate(36deg);
 	transform-origin:left top;
 }
@@ -80,7 +79,6 @@
 }
 
 .burger-border3 {
-	width: 3.7vw;
 	transform: rotate(-36deg);
 	transform-origin:left top;
 }
