@@ -55,30 +55,47 @@
 
 
 .Gl-burger {
-	width: 3vw;
-	height: 3vw;
+	display : block;
+	position: fixed;
+	right : 2.8vw;
+	top   : 4vw;
+	width : 3.5vw;
+	height: 3.5vw;
 	cursor: pointer;
+	text-align: center;
 }
 
-.burger-border {
-	width: 3vw;
-	height: 0.15vw;
-	background-color: #e7b06c;
-	margin-top: 0.8rem;
-	transition-duration: 0.4s;
+.Gl-burger span {
+	display : block;
+	position: absolute;
+	width   : 2.8vw;
+	height  : 0.15vw;
+	left    : 0.4vw;
+	background : #e7b06c;
+	transition: 0.5s ease-in-out;
 }
 
-.burger-border1 {
-	transform: rotate(36deg);
-	transform-origin:left top;
+.Gl-burger span:nth-child(1) {
+	top: 0.71vw;
+}
+.Gl-burger span:nth-child(2) {
+	top: 1.41vw;
+}
+.Gl-burger span:nth-child(3) {
+	top: 2.14vw;
 }
 
-.burger-border2 {
-	width: 0.0vw;
-	margin-top: 0.6rem;
+.Gl-burger:hover span:nth-child(1) {
+	top : 1.14vw;
+	left: 0.42vw;
+	transform: rotate(315deg);
 }
 
-.burger-border3 {
-	transform: rotate(-36deg);
-	transform-origin:left top;
+.Gl-burger:hover span:nth-child(2),
+
+.Gl-burger:hover span:nth-child(3) {
+	top: 1.14vw;
+	transform: rotate(-315deg);
 }
+
+/*予備*/

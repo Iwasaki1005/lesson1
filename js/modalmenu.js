@@ -3,14 +3,15 @@
 {
 const dropen = document.getElementById('hamburger-button');
 const drmenu = document.getElementById('Drawer-menu');
-const border1 = document.getElementById('burger-border1');
-const border2 = document.getElementById('burger-border2');
-const border3 = document.getElementById('burger-border3');
 
 const drcontent1 = document.getElementById('dr-content1');
 const drcontent2 = document.getElementById('dr-content2');
 const drcontent3 = document.getElementById('dr-content3');
 const drcontent4 = document.getElementById('dr-content4');
+
+const glspan1 = document.getElementById('gl-burger-span1');
+const glspan2 = document.getElementById('gl-burger-span2');
+const glspan3 = document.getElementById('gl-burger-span3');
 
 
 dropen.addEventListener('click', function () {
@@ -34,6 +35,9 @@ dropen.addEventListener('click', function () {
 			//3.透明度と位置の設定のクラスを削除しメニューが開かれる//
 			dropen.classList.add('switch-dr');
 			drmenu.classList.remove('dr-hidden');
+			glspan1.classList.add('aaa');
+			glspan2.classList.add('bbb');
+			glspan3.classList.add('ccc');
 			drcontent1.classList.remove('dr-saup');
 			drcontent2.classList.remove('dr-saup');
 			drcontent3.classList.remove('dr-saup');
@@ -42,9 +46,6 @@ dropen.addEventListener('click', function () {
 			drcontent2.classList.remove('opacity-0');
 			drcontent3.classList.remove('opacity-0');
 			drcontent4.classList.remove('opacity-0');
-			border1.classList.add('burger-border1');
-			border2.classList.add('burger-border2');
-			border3.classList.add('burger-border3');
 		}, 10);
 	}
 	else {
@@ -56,13 +57,13 @@ dropen.addEventListener('click', function () {
 		//2.フェードアウト//
 		dropen.classList.remove('switch-dr');
 		drmenu.classList.add('dr-hidden');
+		//glspan1.classList.remove('gl-span1-active');
+		//glspan1.classList.remove('gl-span1-active');
+		//glspan1.classList.remove('gl-span3-active');
 		drcontent1.classList.add('opacity-0');
 		drcontent2.classList.add('opacity-0');
 		drcontent3.classList.add('opacity-0');
 		drcontent4.classList.add('opacity-0');
-		border1.classList.remove('burger-border1');
-		border2.classList.remove('burger-border2');
-		border3.classList.remove('burger-border3');
 		drcontent1.classList.remove('dr-delay1');
 		drcontent2.classList.remove('dr-delay2');
 		drcontent3.classList.remove('dr-delay3');
