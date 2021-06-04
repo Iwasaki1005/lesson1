@@ -35,9 +35,9 @@ dropen.addEventListener('click', function () {
 			//3.透明度と位置の設定のクラスを削除しメニューが開かれる//
 			dropen.classList.add('switch-dr');
 			drmenu.classList.remove('dr-hidden');
-			glspan1.classList.add('aaa');
-			glspan2.classList.add('bbb');
-			glspan3.classList.add('ccc');
+			glspan1.classList.add('gl-span1-active');
+			glspan2.classList.add('gl-span2-active');
+			glspan3.classList.add('gl-span3-active');
 			drcontent1.classList.remove('dr-saup');
 			drcontent2.classList.remove('dr-saup');
 			drcontent3.classList.remove('dr-saup');
@@ -57,9 +57,9 @@ dropen.addEventListener('click', function () {
 		//2.フェードアウト//
 		dropen.classList.remove('switch-dr');
 		drmenu.classList.add('dr-hidden');
-		//glspan1.classList.remove('gl-span1-active');
-		//glspan1.classList.remove('gl-span1-active');
-		//glspan1.classList.remove('gl-span3-active');
+		glspan1.classList.remove('gl-span1-active');
+		glspan2.classList.remove('gl-span2-active');
+		glspan3.classList.remove('gl-span3-active');
 		drcontent1.classList.add('opacity-0');
 		drcontent2.classList.add('opacity-0');
 		drcontent3.classList.add('opacity-0');

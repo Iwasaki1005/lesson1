@@ -5,7 +5,7 @@
  *
 --------------------------------------------------------------------------*/
 
-.Gl-menu {
+.gl-menu {
 	height: 100vh;
 	width: 5vw;
 	position: fixed;
@@ -13,12 +13,12 @@
 	right: 2vw;
 }
 
-.Gl-index {
+.gl-index {
 	height: 60vh;
 	width: 100%;
 }
 
-.Gl-under {
+.gl-under {
 	height: 20vh;
 }
 
@@ -54,7 +54,7 @@
 
 
 
-.Gl-burger {
+.gl-burger {
 	display : block;
 	position: fixed;
 	right : 2.8vw;
@@ -65,7 +65,7 @@
 	text-align: center;
 }
 
-.Gl-burger span {
+.gl-burger span {
 	display : block;
 	position: absolute;
 	width   : 2.8vw;
@@ -75,25 +75,24 @@
 	transition: 0.5s ease-in-out;
 }
 
-.Gl-burger span:nth-child(1) {
+.gl-span1 {
 	top: 0.71vw;
 }
-.Gl-burger span:nth-child(2) {
+.gl-span2 {
 	top: 1.41vw;
 }
-.Gl-burger span:nth-child(3) {
+.gl-span3 {
 	top: 2.14vw;
 }
 
-.Gl-burger:hover span:nth-child(1) {
+.gl-span1-active {
 	top : 1.14vw;
 	left: 0.42vw;
 	transform: rotate(315deg);
 }
 
-.Gl-burger:hover span:nth-child(2),
-
-.Gl-burger:hover span:nth-child(3) {
+.gl-span2-active,
+.gl-span3-active {
 	top: 1.14vw;
 	transform: rotate(-315deg);
 }

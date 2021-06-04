@@ -246,6 +246,9 @@ body {
 	opacity: 0;
 }
 
+.vertical-index {
+	width: 5%;
+}
 
 
 /*--------------------------------------------------------------------------
@@ -340,8 +343,3 @@ body {
 .dmy {
 	height: 200vh;
 }
-
-.bg-white {
-	background-color: white;
-}
-

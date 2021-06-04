@@ -5,27 +5,23 @@
  *
 --------------------------------------------------------------------------*/
 
-.illist-area {
+.il-area {
 	width: 95%;
 }
 
-.vertical-index {
-	width: 5%;
-}
-
-.illust-1 {
+.il-1 {
 	width: 41.6vw;
 	height: 23.4vw;
 	border: 0.2vw solid #e7b06c;
 }
 
-.illust-2 {
+.il-2 {
 	width: 19.2vw;
 	height: 10.8vw;
 	border: 0.2vw solid #e7b06c;
 }
 
-.illust-3 {
+.il-3 {
 	width: 19.2vw;
 	height: 10.8vw;
 	border: 0.2vw solid #e7b06c;
