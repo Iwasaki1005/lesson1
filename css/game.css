@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------------------
+ *
+ * Game
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.game-slideshow {
+	width: 500%;
+	height: 60vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.game-slide {
+	width: 60vw;
+	height: 30vw;
+	position: absolute;
+	transition-duration: 2s;
+}
+
+.slide-position1 {
+	left: 5vw;
+}
+
+.slide-position2 {
+	left: 75vw;
+}
+
+.slide-position3 {
+	left: 145vw;
+}
+
+.slide-position0 {
+	left: -70vw;
+}

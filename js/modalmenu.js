@@ -22,10 +22,10 @@ dropen.addEventListener('click', function () {
 		drcontent3.classList.add('dr-saup');
 		drcontent4.classList.add('dr-saup');
 		//2.時間差、アニメーション時間を設定//
-		drcontent1.classList.add('dr-delay1');
-		drcontent2.classList.add('dr-delay2');
-		drcontent3.classList.add('dr-delay3');
-		drcontent4.classList.add('dr-delay4');
+		drcontent1.classList.add('tr-delay-01s');
+		drcontent2.classList.add('tr-delay-02s');
+		drcontent3.classList.add('tr-delay-03s');
+		drcontent4.classList.add('tr-delay-04s');
 		drcontent1.classList.add('tr-duration-05s');
 		drcontent2.classList.add('tr-duration-05s');
 		drcontent3.classList.add('tr-duration-05s');
@@ -50,10 +50,10 @@ dropen.addEventListener('click', function () {
 	}
 	else {
 		//1.時間差の設定を削除//
-		drcontent1.classList.remove('dr-delay1');
-		drcontent2.classList.remove('dr-delay2');
-		drcontent3.classList.remove('dr-delay3');
-		drcontent4.classList.remove('dr-delay4');
+		drcontent1.classList.remove('tr-delay-01s');
+		drcontent2.classList.remove('tr-delay-02s');
+		drcontent3.classList.remove('tr-delay-03s');
+		drcontent4.classList.remove('tr-delay-04s');
 		//2.フェードアウト//
 		dropen.classList.remove('switch-dr');
 		drmenu.classList.add('dr-hidden');
@@ -64,10 +64,10 @@ dropen.addEventListener('click', function () {
 		drcontent2.classList.add('opacity-0');
 		drcontent3.classList.add('opacity-0');
 		drcontent4.classList.add('opacity-0');
-		drcontent1.classList.remove('dr-delay1');
-		drcontent2.classList.remove('dr-delay2');
-		drcontent3.classList.remove('dr-delay3');
-		drcontent4.classList.remove('dr-delay4');
+		drcontent1.classList.remove('tr-delay-01s');
+		drcontent2.classList.remove('tr-delay-02s');
+		drcontent3.classList.remove('tr-delay-03s');
+		drcontent4.classList.remove('tr-delay-04s');
 		setTimeout(function(){
 			//3.アニメーション時間の設定を削除//
 			drcontent1.classList.remove('tr-duration-05s');

@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="./css/scrollanime.css" media="screen and (min-width:1000px) and (max-width:2000px)">
 	<link rel="stylesheet" href="./css/scrollbar.css" media="screen and (min-width:1000px) and (max-width:2000px)">
 	<link rel="stylesheet" href="./css/top-slider.css" media="screen and (min-width:1000px) and (max-width:2000px)">
+	<link rel="stylesheet" href="./css/game.css" media="screen and (min-width:1000px) and (max-width:2000px)">
 	
 	<title>タイトル</title>
 	<meta name="keywords" content="ねばーらんどF,イラスト,フリーゲーム,イラスト素材,,">
@@ -72,7 +73,7 @@
 		<img class="ef-wing ef-w4" src="./sprite/wing.svg">
 	</section>
 
-	<nav class="Global-menu">
+	<nav id="Gl-menu" class="gl-menu">
 		<div class="gl-under content-core">
 			<div id="hamburger-button" class="gl-burger">
 				<span id="gl-burger-span1" class="gl-span1"></span>
@@ -90,13 +91,10 @@
 		</div>
 	</nav>
 
-	<!-- ↓ 現在作成中部分 ↓ -->
-
-
 	<ul id="Drawer-menu" class="dr-menu dr-hidden">
 		<img class="dr-logo center" src="./dmyimage/rogo_dmy.png">
 		<div class="dr-links">
-			<div id="dr-content1" class="dr-container dr-saup opacity-0 dr-delay1">
+			<div id="dr-content1" class="dr-container dr-saup opacity-0 tr-delay-01s">
 				<div class="display-flex dr-link">
 					<i class="fas fa-home co-brown dr-icon m-right-05rem"></i>
 					<div>
@@ -119,7 +117,7 @@
 					</div>
 				</div>
 			</div> 
-			<div id="dr-content2" class="dr-container dr-saup opacity-0 dr-delay2">
+			<div id="dr-content2" class="dr-container dr-saup opacity-0 tr-delay-02s">
 				<div class="display-flex dr-link">
 				<i class="fas fa-question-circle co-brown dr-icon m-right-05rem"></i>
 				<div>
@@ -149,8 +147,8 @@
 					</div>
 				</div>
 			</div>
-			<div id="dr-content3" class="dr-line dr-saup opacity-0 dr-delay3"></div>
-			<div id="dr-content4" class="dr-container dr-saup opacity-0 dr-delay4">
+			<div id="dr-content3" class="dr-line dr-saup opacity-0 tr-delay-03s"></div>
+			<div id="dr-content4" class="dr-container dr-saup opacity-0 tr-delay-04s">
 				<div class="display-flex dr-link">
 					<i class="fab fa-dailymotion co-brown dr-icon m-right-05rem"></i>
 					<div>
@@ -175,10 +173,6 @@
 			</div> 
 		</div>
 	</ul>
-	
-	
-	<!-- ↑ 現在作成中部分 ↑ -->
-
 
 	<div id="NeverLand-top" class="nl-top-position">
 		<div class="nl-top">
@@ -214,7 +208,6 @@
 			-->
 		</div>
 	</div>
-
 
 	<section id="News" class="section">
 		<h2 class="font-E3 text-center scroll-fadein sa sa--up">News</h2>
@@ -259,20 +252,37 @@
 	</section>
 
 
+	<!-- ↓ 現在作成中部分 ↓ -->
+
+
+	
 	<section id="Game" class="section sa sa--up">
 		<h2 class="font-E3 text-center scroll-fadein">hutatume</h2>
-		<div>
-			<span>
-				※保留中
-			</span>
+		<div class="display-flex">
+			<div class="width5 sa sa--up">
+				<p class="font-E3 vertical-text">Game <span class="v-line">────────────────────────────────────────</span></p>
+			</div>
+			<div class="width95">
+				<div class="game-slideshow display-flex">
+					<img id="game-slide1" class="game-slide tr-duration-05s slide-position1" src="https://clip.narinari.com/wp-content/uploads/2020/10/100_wakrariKV-724x1024.jpg">
+					<img id="game-slide2" class="game-slide tr-duration-05s slide-position2" src="https://i.pinimg.com/474x/d6/34/be/d634bed00056ea58fbf6ebfd1de74791.jpg">
+					<img id="game-slide3" class="game-slide tr-duration-05s slide-position3" src="https://lohas.nicoseiga.jp/thumb/9655794i?1568824268">
+				</div>
+			</div>
 		</div>
+		<button id="slide-bt-next">スライド移動</button>
 	</section>
+
+
+
+	<!-- ↑ 現在作成中部分 ↑ -->
+
 
 
 	<section id="Illust" class="section-2">
 		<h2 class="font-E3 text-center scroll-fadein sa sa--up">three</h2>
 		<div class="display-flex">
-			<div class="il-area">
+			<div class="width95">
 				<div class="space-around sa sa--up">
 					<div class="il-1 flex-lower-right">
 						<img class="bt-il-open m-bottom-05rem m-right-05rem" src="./img/bt-open.svg">
@@ -300,7 +310,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="vertical-index sa sa--up">
+			<div class="width5 sa sa--up">
 				<p class="font-E3 vertical-text">Illust <span class="v-line">────────────────────────────────────────</span></p>
 			</div>
 		</div>
@@ -342,6 +352,7 @@
 
 	<script type="text/javascript" src="./js/modalmenu.js"></script>
 	<script type="text/javascript" src="./js/scrollanime_js.js"></script>
+	<script type="text/javascript" src="./js/game-slide.js"></script>
 
 	
 

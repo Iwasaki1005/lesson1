@@ -6,7 +6,11 @@
 --------------------------------------------------------------------------*/
 
 html {
-	overflow: overlay
+	overflow: overlay;
+}
+
+body{
+	overflow-x: hidden;
 }
 
 body {
@@ -109,7 +113,7 @@ body {
 	z-index: 20;
 }
 
-.Gl-menu {
+.gl-menu {
 	z-index: 30;
 }
 
@@ -134,7 +138,6 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 40vh;
-	/*border: 2px solid tomato;*/
 }
 
 .section-2 {
@@ -142,11 +145,18 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 40vh;
-	/*border: 2px solid tomato;*/
 }
 
 .width100 {
 	width: 100%;
+}
+
+.width95 {
+	width: 95%;
+}
+
+.width5 {
+	width: 5%;
 }
 
 .display-flex {
@@ -242,12 +252,40 @@ body {
 	margin-left: 2rem;
 }
 
+.y-hidden {
+	overflow-y: hidden;
+}
+
 .opacity-0 {
 	opacity: 0;
 }
 
-.vertical-index {
-	width: 5%;
+.tr-duration-05s {
+	transition-duration: 0.5s;
+}
+
+.tr-duration-1s {
+	transition-duration: 1s;
+}
+
+.tr-duration-2s {
+	transition-duration: 2s;
+}
+
+.tr-delay-01s {
+	transition-delay: 0.1s;
+}
+
+.tr-delay-02s {
+	transition-delay: 0.2s;
+}
+
+.tr-delay-03s {
+	transition-delay: 0.3s;
+}
+
+.tr-delay-04s {
+	transition-delay: 0.4s;
 }
 
 
@@ -338,7 +376,9 @@ body {
 
 
 
-
+.bg-tomato {
+	background-color: tomato;
+}
 
 .dmy {
 	height: 200vh;

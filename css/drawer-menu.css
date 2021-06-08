@@ -100,30 +100,10 @@
 	display: none;
 }
 
-.dr-delay1 {
-	transition-delay: 0.1s;
-}
-
-.dr-delay2 {
-	transition-delay: 0.2s;
-}
-
-.dr-delay3 {
-	transition-delay: 0.3s;
-}
-
-.dr-delay4 {
-	transition-delay: 0.4s;
-}
-
 .dr-saup {
 	transform: translate(0, 5vh);
 }
 
 .dr-hide {
 	opacity: 0;
-}
-
-.tr-duration-05s {
-	transition-duration: 0.5s;
 }
