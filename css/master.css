@@ -9,7 +9,7 @@ html {
 	overflow: overlay;
 }
 
-body{
+body {
 	overflow-x: hidden;
 }
 
@@ -306,8 +306,8 @@ body {
 }
 
 .img-zoom:hover {
-	transform:scale(1.2,1.2);
-	transition:1s all;
+	transform:scale(1.1,1.1);
+	transition:0.5s all;
 }
 
 .hover-flash {
