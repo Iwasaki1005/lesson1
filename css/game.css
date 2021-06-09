@@ -7,7 +7,7 @@
 
 .game-slideshow {
 	width: 500%;
-	height: 60vh;
+	height: 33vw;
 	overflow: hidden;
 	position: relative;
 }
@@ -32,4 +32,9 @@
 
 .slide-position0 {
 	left: -70vw;
+}
+
+.slide-arrow {
+	font-size: 3rem;
+	color: #e7b06c;
 }

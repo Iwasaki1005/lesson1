@@ -332,7 +332,7 @@ const autoslide = () => {
 			}
 		}
 }
-setInterval(autoslide, 5000);
+setInterval(autoslide, 8000);
 
 
 }
