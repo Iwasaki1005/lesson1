@@ -260,6 +260,10 @@ body {
 	opacity: 0;
 }
 
+.display-none {
+	display: none;
+}
+
 .tr-duration-05s {
 	transition-duration: 0.5s;
 }
