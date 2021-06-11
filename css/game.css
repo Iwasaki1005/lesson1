@@ -19,22 +19,23 @@
 }
 
 .slide-position1 {
-	left: 5vw;
+	left: 0vw;
 }
 
 .slide-position2 {
-	left: 75vw;
+	left: 70vw;
 }
 
 .slide-position3 {
-	left: 145vw;
+	left: 140vw;
 }
 
 .slide-position0 {
-	left: -70vw;
+	left: -65vw;
 }
 
 .slide-arrow {
-	font-size: 3rem;
+	font-size: 1.8rem;
 	color: #e7b06c;
+	margin: 0px 0.2em;
 }
