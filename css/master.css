@@ -41,7 +41,7 @@ a {
  *
 --------------------------------------------------------------------------*/
 
-body {
+:root {
 	font-size: 1.4vw;
 }
 
@@ -50,6 +50,18 @@ h2 {
 	font-weight: normal;
 	margin: 0;
 	color: #e7b06c;
+}
+
+.fs-14 {
+	font-size: 1.4rem;
+}
+
+.fs-08 {
+	font-size: 0.8rem;
+}
+
+.lh-110 {
+	line-height: 110%;
 }
 
 body {
@@ -464,11 +476,7 @@ body {
 
 
 
-.pm-flame {
-	width: 50vw;
-	height: 29.48vw;
-	background-image: url(../img/profile_flame.svg);
-}
+
 
 
 

@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------------------
+ *
+ * button
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.pm-flame {
+	width: 50vw;
+	height: 29.48vw;
+	background-image: url(../img/profile_flame.svg);
+	display: grid;
+	grid-template-rows: 4.5% auto 4.5%;
+	grid-template-columns: 3% 38% auto 3%;
+}
+
+.pm-name {
+	grid-row: 2 / 3;
+	grid-column: 3 / 4;
+}
