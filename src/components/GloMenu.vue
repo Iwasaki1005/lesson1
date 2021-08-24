@@ -1,7 +1,28 @@
+<template>
+	<nav id="Gl-menu" class="gl-menu">
+		<div class="gl-under content-core">
+			<div id="hamburger-button" class="gl-burger">
+				<span id="gl-burger-span1" class="gl-span1"></span>
+				<span id="gl-burger-span2" class="gl-span2"></span>
+				<span id="gl-burger-span3" class="gl-span3"></span>
+			</div>
+		</div>
+		<div class="gl-index content-core">
+			<div class="side-vertical font-E2"><span class="m-bottom-1rem">NANTOKAKANTOKA</span>OFFICIAL SITE</div>
+		</div>
+		<div class="gl-under content-core">
+			<div class="tw-round content-core">
+				<i class="fab fa-twitter"></i>
+			</div>
+		</div>
+	</nav>
+</template>
 
-'use strict';
-{
-const dropen = document.getElementById('hamburger-button');
+<script>
+export default {
+  name: 'Glmenu',
+   mounted: function() {
+	const dropen = document.getElementById('hamburger-button');
 const drmenu = document.getElementById('Drawer-menu');
 
 const drcontent1 = document.getElementById('dr-content1');
@@ -77,5 +98,7 @@ dropen.addEventListener('click', function () {
 		}, 200);
 	}
 });
-}
 
+  },
+}
+</script>

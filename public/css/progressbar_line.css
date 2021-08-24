@@ -1,0 +1,16 @@
+#Pr_line {
+	width: 100vw;
+	height: 0.2vw;
+	position: fixed;
+	top: 49vh;
+	z-index: 900;
+}
+
+#Loading {
+	background-color: #fafafa;
+	width: calc(100vw - calc(100vw - 100%));
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	z-index: 800;
+}

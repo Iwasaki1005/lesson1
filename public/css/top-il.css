@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------------------
+ *
+ * Gl-menu
+ *
+ *
+--------------------------------------------------------------------------*/
+
+.tp-il-bg {
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	background-color: #fff5e7d7;
+}
+
+.tp-il-img {
+	height: 70vh;
+	width: 80%;
+	object-fit: contain;
+	border: 0.2vw solid #e7b06c;
+}
+
+.tp-il-text {
+	background-color: #e7b06c;
+	width: 60%;
+}
+
+.bt-il-close {
+	height: 1.8rem;
+}
