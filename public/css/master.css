@@ -53,6 +53,10 @@ h2 {
 	color: #e7b06c;
 }
 
+a {
+	color: #42b983;
+}
+
 .fs-1_2rem {
 	font-size: 1.2rem;
 }
@@ -153,7 +157,7 @@ body {
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 40vh;
+	margin-top: 30vh;
 }
 
 .section-2 {

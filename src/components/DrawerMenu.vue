@@ -3,20 +3,24 @@
 		<img class="dr-logo center" src="../assets/dmyimage/rogo_dmy.png">
 		<div class="dr-links">
 			<div id="dr-content1" class="dr-container dr-saup opacity-0">
-				<div class="display-flex dr-link">
-					<i class="fas fa-home co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">H</span><span class="co-grey">ome</span></p>
-						<p class="dr-fs2 co-grey">ホーム</p>
+				<router-link id="homeopen" to="/">
+					<div class="display-flex dr-link aabbccdd">
+						<i class="fas fa-home co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">H</span><span class="co-grey">ome</span></p>
+							<p class="dr-fs2 co-grey">ホーム</p>
+						</div>
 					</div>
-				</div>
-				<div class="display-flex dr-link">
-					<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
-					<a href="./neverland-f.com/about.html">
-						<p class="font-E2 dr-fs1"><span class="co-brown">A</span><span class="co-grey">bout</span></p>
-						<p class="dr-fs2 co-grey">概要</p>
-					</a>
-				</div>
+				</router-link>
+				<router-link id="aboutopen" to="/about">
+					<div class="display-flex dr-link aabbccdd">
+						<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">A</span><span class="co-grey">bout</span></p>
+							<p class="dr-fs2 co-grey">概要</p>
+						</div>
+					</div>
+				</router-link>
 				<div class="display-flex dr-link">
 					<i class="fas fa-newspaper co-brown dr-icon m-right-05rem"></i>
 					<div>
