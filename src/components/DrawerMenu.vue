@@ -4,7 +4,7 @@
 		<div class="dr-links">
 			<div id="dr-content1" class="dr-container dr-saup opacity-0">
 				<router-link id="homeopen" to="/">
-					<div class="display-flex dr-link aabbccdd">
+					<div class="display-flex dr-link closeevent">
 						<i class="fas fa-home co-brown dr-icon m-right-05rem"></i>
 						<div>
 							<p class="font-E2 dr-fs1"><span class="co-brown">H</span><span class="co-grey">ome</span></p>
@@ -13,7 +13,7 @@
 					</div>
 				</router-link>
 				<router-link id="aboutopen" to="/about">
-					<div class="display-flex dr-link aabbccdd">
+					<div class="display-flex dr-link closeevent">
 						<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
 						<div>
 							<p class="font-E2 dr-fs1"><span class="co-brown">A</span><span class="co-grey">bout</span></p>
@@ -21,27 +21,31 @@
 						</div>
 					</div>
 				</router-link>
-				<div class="display-flex dr-link">
-					<i class="fas fa-newspaper co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">N</span><span class="co-grey">ews</span></p>
-						<p class="dr-fs2 co-grey">最新情報</p>
+				<router-link id="newsopen" to="/news">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-newspaper co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">N</span><span class="co-grey">ews</span></p>
+							<p class="dr-fs2 co-grey">最新情報</p>
+						</div>
 					</div>
-				</div>
-			</div> 
+				</router-link>
+			</div>
 			<div id="dr-content2" class="dr-container dr-saup opacity-0">
-				<div class="display-flex dr-link">
-				<i class="fas fa-question-circle co-brown dr-icon m-right-05rem"></i>
-				<div>
-					<p class="font-E2 dr-fs1"><span class="co-brown">D</span><span class="co-grey">ammy</span></p>
-					<p class="dr-fs2 co-grey">dmy</p>
-				</div>
-				</div>
+				<router-link id="galleryopen" to="/gallery">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-pen-alt co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">G</span><span class="co-grey">allery</span></p>
+							<p class="dr-fs2 co-grey">イラスト一覧</p>
+						</div>
+					</div>
+				</router-link>
 				<div class="display-flex dr-link">
 					<i class="fas fa-question-circle co-brown dr-icon m-right-05rem"></i>
 					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">D</span><span class="co-grey">ammy</span></p>
-						<p class="dr-fs2 co-grey">dmy</p>
+						<p class="font-E2 dr-fs1"><span class="co-brown">？</span><span class="co-grey">？？</span></p>
+						<p class="dr-fs2 co-grey">Coming soon</p>
 					</div>
 				</div>
 				<div class="display-flex dr-link">
@@ -90,5 +94,8 @@
 <script>
 export default {
   name: 'DrawerMenu',
+  mounted: function () {
+    
+  }
 }
 </script>

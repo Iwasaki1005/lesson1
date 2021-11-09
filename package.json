@@ -11,8 +11,9 @@
     "core-js": "^3.6.5",
     "progressbar.js": "^1.1.0",
     "vue": "^2.6.11",
-    "vuetify": "^2.5.8",
-    "vue-router": "3.0.7"
+    "vue-js-modal": "^2.0.1",
+    "vue-router": "3.0.7",
+    "vuetify": "^2.5.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

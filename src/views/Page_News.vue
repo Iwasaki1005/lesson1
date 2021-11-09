@@ -1,30 +1,34 @@
 <template>
-	<section id="About" class="section">
-		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>About</span></h2>
-		<div class="vertical-line center sa sa--up"></div>
-		<div class="sa sa--up">
-			<p class="text-center">
-				当サイトは猟団「三乙死罪」の公式ページです。<br><br>
-				非火事場装備は進化笛以外原則禁止となっております。<br><br>
-				非不退装備も禁止となっております。<br><br>
-				万が一にも一クエストで三乙した場合、<br>
-				覚悟の準備をしてください。
-			</p>
-		</div>
-		<router-link to="/">
-			<div class="content-core m-top-2rem sa sa--up">
-				<div class="bt-typeA bt-typeA-border d-block center">
-					<span class="bt-typeA-border-inner font-E1">Back To Home ></span>
-				</div>
-			</div>
-		</router-link>
+	<section id="News" class="section">
+		<transition name="slide" mode="out-in">
+			<router-view />
+		</transition>
 	</section>
 </template>
 
 <script>
 export default {
-	name: 'Page_About',
+	name: 'Page_News',
+	data () {
+		return {
+			tab: null,
+			items: [
+			'2021', '2020',
+		],
+		breadcrumbs: [
+		{
+			text: 'Home',
+			disabled: false,
+			to: '/',
+		},
+		{
+			text: 'News',
+			disabled: false,
+			href: '',
+		},
+		],
+		}
+	},
 	mounted: function() {
 		/*--------------------------------------------------------------------------
 		 *
@@ -68,19 +72,22 @@ export default {
 		// window.innerHeightについて
 		// https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight
 	},
-	data: () => ({
-		breadcrumbs: [
-		{
-			text: 'Home',
-			disabled: false,
-			to: '/',
-		},
-		{
-			text: 'About',
-			disabled: false,
-			href: '',
-		},
-		],
-	}),
 }
 </script>
+
+<style>
+.bg-none {
+	background-color: transparent;
+}
+</style>
+
+<style scoped>
+.slide-enter-active,
+.slide-leave-active {
+	transition: opacity 0.5s,;
+}
+.slide-enter,
+.slide-leave-to {
+	opacity: 0;
+}
+</style>

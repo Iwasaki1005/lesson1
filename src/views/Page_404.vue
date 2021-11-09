@@ -1,18 +1,16 @@
 <template>
-	<section id="About" class="section">
+	<section id="" class="section">
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>About</span></h2>
+		<h2 class="font-E3 text-center"><span>404 NotFound</span></h2>
 		<div class="vertical-line center sa sa--up"></div>
 		<div class="sa sa--up">
 			<p class="text-center">
-				当サイトは猟団「三乙死罪」の公式ページです。<br><br>
-				非火事場装備は進化笛以外原則禁止となっております。<br><br>
-				非不退装備も禁止となっております。<br><br>
-				万が一にも一クエストで三乙した場合、<br>
-				覚悟の準備をしてください。
+				申し訳ありません。お探しのページは見つかりませんでした。<br><br>
+				お探しのページはアドレスが変更されたか、削除された可能性がございます。<br><br>
+				恐れ入りますが、お探しのページのURLが正しいかどうかをご確認ください。
 			</p>
 		</div>
-		<router-link to="/">
+		<router-link id="homeopen" to="/">
 			<div class="content-core m-top-2rem sa sa--up">
 				<div class="bt-typeA bt-typeA-border d-block center">
 					<span class="bt-typeA-border-inner font-E1">Back To Home ></span>
@@ -24,7 +22,7 @@
 
 <script>
 export default {
-	name: 'Page_About',
+	name: 'Page_404',
 	mounted: function() {
 		/*--------------------------------------------------------------------------
 		 *
@@ -76,8 +74,8 @@ export default {
 			to: '/',
 		},
 		{
-			text: 'About',
-			disabled: false,
+			text: '404 NotFound',
+			disabled: true,
 			href: '',
 		},
 		],

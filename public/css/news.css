@@ -42,8 +42,9 @@
 .newstag-dmy {
 	background-color: red;
 	text-align: center;
-	width: 100%;
-	margin: 5% auto;
+	width: 2.6rem;
+	height: 1.2rem;
+	margin: 0.1rem;
 	border-radius: 10%;
 	font-size: 0.8rem;
 	line-height: 1.2rem;
@@ -52,8 +53,8 @@
 .newstag-info {
 	background-color: #ff4d91;
 	text-align: center;
-	width: 100%;
-	margin: 15% auto;
+	width: 2.6rem;
+	margin: 0.1rem;
 	border-radius: 10%;
 	font-size: 0.8rem;
 	line-height: 1.2rem;

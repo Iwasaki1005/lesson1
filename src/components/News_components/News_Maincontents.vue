@@ -1,30 +1,68 @@
 <template>
-	<section id="About" class="section">
+	<div>
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>About</span></h2>
+		<h2 class="font-E3 text-center"><span>News</span></h2>
 		<div class="vertical-line center sa sa--up"></div>
-		<div class="sa sa--up">
-			<p class="text-center">
-				当サイトは猟団「三乙死罪」の公式ページです。<br><br>
-				非火事場装備は進化笛以外原則禁止となっております。<br><br>
-				非不退装備も禁止となっております。<br><br>
-				万が一にも一クエストで三乙した場合、<br>
-				覚悟の準備をしてください。
-			</p>
-		</div>
-		<router-link to="/">
-			<div class="content-core m-top-2rem sa sa--up">
-				<div class="bt-typeA bt-typeA-border d-block center">
-					<span class="bt-typeA-border-inner font-E1">Back To Home ></span>
-				</div>
-			</div>
-		</router-link>
-	</section>
+		<v-card theme="disable" class="bg-none sa sa--up">
+			<v-tabs v-model="tab" align-with-title grow>
+				<v-tabs-slider color="yellow"></v-tabs-slider>
+				<v-tab v-for="item in items" :key="item">
+					{{ item }}
+				</v-tab>
+			</v-tabs>
+			<v-tabs-items v-model="tab">
+				<v-tab-item>
+					<router-link to="/news/20210202dmy">
+						<div class="nw-column m-bottom-2rem">
+							<div class="align-center">
+								<p class="fs-0_8rem m-right-05rem co-black">2021.02.02</p>
+								<div class="newstag-dmy co-white font-E1">dmy</div>
+								<div class="newstag-info co-white font-E1">info</div>
+							</div>
+							<p class="co-black">2021年(仮)のテストニュースです。</p>
+						</div>
+					</router-link>
+				</v-tab-item>
+				<v-tab-item>
+					<router-link to="/news/20200101dmy">
+						<div class="nw-column m-bottom-2rem">
+							<div class="align-center">
+								<p class="fs-0_8rem m-right-05rem co-black">2020.01.01</p>
+								<div class="newstag-dmy co-white font-E1">dmy</div>
+								<div class="newstag-info co-white font-E1">info</div>
+							</div>
+							<p class="co-black">2020年(仮)のテストニュースです。</p>
+						</div>
+					</router-link>
+				</v-tab-item>
+			</v-tabs-items>
+		</v-card>
+	</div>
 </template>
 
 <script>
 export default {
-	name: 'Page_About',
+	name: 'News_Maincontents',
+	data () {
+		return {
+			tab: null,
+			items: [
+			'2021', '2020',
+		],
+		breadcrumbs: [
+			{
+				text: 'Home',
+				disabled: false,
+				to: '/',
+			},
+			{
+				text: 'News',
+				disabled: false,
+				href: '',
+			},
+			],
+		}
+	},
 	mounted: function() {
 		/*--------------------------------------------------------------------------
 		 *
@@ -68,19 +106,18 @@ export default {
 		// window.innerHeightについて
 		// https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight
 	},
-	data: () => ({
-		breadcrumbs: [
-		{
-			text: 'Home',
-			disabled: false,
-			to: '/',
-		},
-		{
-			text: 'About',
-			disabled: false,
-			href: '',
-		},
-		],
-	}),
 }
 </script>
+
+<style>
+.nw-column {
+	padding: 1rem 2rem;
+	border-radius: 0.2vw;
+	/*box-shadow: 0.06vw 0.06vw 0.12vw 0.12vw #e7b06c;*/
+	margin: 2rem 0.5rem;
+}
+
+.bg-none {
+	background-color: transparent;
+}
+</style>

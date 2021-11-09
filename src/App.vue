@@ -4,22 +4,35 @@
 		<BackgroundEffect />
 		<Glmenu />
 		<DrawerMenu />
-		<TestComponent />
-		<!--
-		<div id="nav" class="tab-area-base">
-			<ul class="tab-menu-base">
-				<li><router-link to="/">Home</router-link></li>
-				<li><router-link to="/routing">Rounting Test</router-link></li>
-				<li><router-link to="/about">About</router-link></li>
-			</ul>
-		</div>
-		-->
-		<router-view />
+		<v-app>
+			<TestComponent />
+			<transition name="slide" mode="out-in">
+				<router-view />
+			</transition>
+		</v-app>
+		<div style="margin-bottom: 100vh;"></div>
 	</div>
 </template>
 
+<style scoped>
+/*
+.v-enter-active, .v-leave-active {
+  transition: opacity .5s;
+}
+.v-enter, .v-leave-to {
+  opacity: 0;
+}*/
+.slide-enter-active,
+.slide-leave-active {
+	transition: opacity 0.5s,;
+}
+.slide-enter,
+.slide-leave-to {
+	opacity: 0;
+}
+</style>
+
 <script>
-	/*import HelloWorld from './components/HelloWorld.vue'*/
 	import Loading from './components/Loading.vue'
 	import BackgroundEffect from './components/BackgroundEffect.vue'
 	import Glmenu from './components/GloMenu.vue'
@@ -28,14 +41,42 @@
 
 	export default {
 		name: 'App',
+		data: function () {
+			return { show: true };
+		},
 		components: {
-			/*HelloWorld,*/
 			BackgroundEffect,
 			Loading,
 			Glmenu,
 			DrawerMenu,
 			TestComponent,
+		},
+		methods : {
+			createTitleDesc : function(routeInstance){
+				// タイトルを設定
+				if(routeInstance.meta.title){
+					var setTitle = routeInstance.meta.title + ' | サイトタイトル';
+					document.title = setTitle;
+				} else {
+					document.title = 'title is not set'
+				}
+				// メタタグdescription設定
+				if(routeInstance.meta.desc){
+					var setDesc = routeInstance.meta.desc + ' | サイトタイトル';
+					document.querySelector("meta[name='description']").setAttribute('content', setDesc)
+				} else {
+					document.querySelector("meta[name='description']").setAttribute('content', 'description is not set')
+				}
+			} 
+		},
+		mounted : function(){
+			var routeInstance = this.$route;
+			this.createTitleDesc(routeInstance);
+		},
+		watch: { 
+			'$route' (routeInstance,) {
+				this.createTitleDesc(routeInstance);
+			}
 		}
 	}
-
 </script>
